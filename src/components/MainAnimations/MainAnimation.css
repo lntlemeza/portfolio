@@ -1,0 +1,71 @@
+.lead-animations{
+    position: absolute;
+  }
+  
+  .rocket, .astro{
+    width: 150px;
+  }
+  
+  .book{
+    position: absolute;
+    left: 85vw;
+    top: 45vh;
+    width: 50px;
+    opacity: 0;
+    animation: bookfloats 3s 14s forwards infinite ease;
+  }
+  
+  @keyframes bookfloats {
+    0%{opacity: 1; transform: translateY(-5vh);}
+    50%{opacity: 1; transform: translateY(-10vh);}
+    100%{opacity: 1; transform: translateY(-5vh);}
+  }
+  
+  .astro{
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: exitrocket 5s 7s linear forwards,
+                floats 3s 13s ease forwards infinite;
+  }
+  
+  @keyframes exitrocket {
+    0%{opacity: 0.5; transform: scale(0.1);}
+    100%{opacity: 1; transform: translate(80vw, -20vh) scale(1);}
+  }
+  
+  @keyframes floats {
+    0%{opacity: 1; transform: translate(80vw, -20vh) scale(1);}
+    50%{ opacity: 1; transform: translate(80vw, -25vh) scale(1);}
+    100%{ opacity: 1; transform: translate(80vw, -20vh) scale(1);}
+  }
+  
+  
+  .rocket{
+    position: absolute;
+    animation:  arrive 3s linear forwards,
+                land 3s 3s ease forwards,
+                float 4s 6s infinite ease;
+  } 
+  
+  
+  @keyframes arrive {
+    0%{transform: translateX(100vw);}
+    80%{ transform: translateX(5vw);}
+    100%{transform: rotateZ(90deg);}
+  }
+  
+  @keyframes land {
+    0%{transform: rotateZ(90deg);}
+    100%{transform: rotateZ(90deg) translate(60vh, -5vw);}
+  }
+  
+  @keyframes float {
+    0%{transform: rotateZ(90deg) translate(60vh, -5vw);}
+    50%{transform: rotateZ(90deg) translate(55vh, -5vw);}
+    100%{transform: rotateZ(90deg) translate(60vh, -5vw);}
+  }
+  
+  

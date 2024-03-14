@@ -1,0 +1,29 @@
+
+
+
+.nav{
+    min-width: 100%;
+}
+
+.nav ul{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    cursor: pointer;
+
+}
+
+.nav-items li{
+    list-style: none;
+    
+}
+
+.nav-items a{
+    margin-right: 40px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+
+}
+

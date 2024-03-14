@@ -1,0 +1,124 @@
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+.about div{
+  margin-top: 2rem;
+}
+
+img{
+    width: 35px;
+}
+
+
+p{
+    font-size: 15px;
+    line-height: 40px;
+}
+
+/* Fade in animations*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(-50px); /* Adjust as needed */
+    animation: fadeInAnimation 2s ease 5s forwards;
+}
+
+.fade-in1 {
+    opacity: 0;
+    transform: translateY(-50px); /* Adjust as needed */
+    animation: fadeInAnimation 2s ease 8s forwards;
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateY(-50px); /* Adjust as needed */
+    animation: fadeInAnimation 2s ease 10s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#skills {
+    margin: 0;
+    width: 80%;
+    min-height: 100px;
+    padding-bottom: 30px;
+    position: relative; /* Add position relative to establish a containing block for absolutely positioned elements */
+}
+
+.floating-image {
+    position: absolute;
+    animation: floatAnimation 3s infinite ease-in-out alternate; /* Adjust animation duration */
+}
+
+/* Translate each image slightly to prevent overlapping */
+.html {
+    top: 10px;
+    left: 25%;
+}
+
+.css {
+    top: 10px;
+    left: 50%;
+}
+
+.js {
+    top: 10px;
+    left: 75%;
+}
+
+.react {
+    top: 60%;
+    left: 15%;
+    width: 50px;
+}
+
+.csharp {
+    top: 60%;
+    left: 35%;
+}
+
+.dotnet {
+    top:60%;
+    left: 63%;
+}
+
+.xamarin {
+    top: 60%;
+    left: 83%;
+    width: 40px;
+}
+
+.sql{
+    top: 75%;
+    left: 49%;
+    width: 50px;
+}
+
+.boot{
+    top: 10px;
+    left: 90%;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Adjusting the amount of float */
+    }
+}
+
+
+/* Responsive */
