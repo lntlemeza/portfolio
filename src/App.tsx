@@ -40,8 +40,9 @@ const App = () => {
     <div>
       <NavigationBar />
       <MainAnimation />
+      {pathname === "/" && <About></About>}
       <Routes>
-        <Route path="/" element={<About animate={animate} />}></Route>
+        {/* <Route path="/" element={<About animate={animate} />}></Route> */}
         <Route path="/about" element={<About animate={animate} />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contact" element={<HireMe />}></Route>
