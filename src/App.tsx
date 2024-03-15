@@ -40,6 +40,7 @@ const App = () => {
     <div>
       <NavigationBar />
       <MainAnimation />
+      <h1>Hello</h1>
       <About/>
       {pathname === "/portfolio/" && <About></About>}
       <Routes>
