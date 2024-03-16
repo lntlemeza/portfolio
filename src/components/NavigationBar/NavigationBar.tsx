@@ -5,7 +5,7 @@ const NavigationBar = () => {
   return (
     <nav className="nav">
       <ul className="nav-items">
-        <Link to="/about">About</Link>
+        <Link to="/">About</Link>
         <Link to="/projects">Projects</Link>
 
         <Link to="/contact">Hire Me</Link>

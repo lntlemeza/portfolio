@@ -13,8 +13,6 @@ import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
-  const pathname = window.location.pathname;
-
   //*will be use along with the use effect to ensure the animation runs once
   const [animate, setAnimate] = useState(true);
 
@@ -30,6 +28,7 @@ const App = () => {
 
   /*Handle image backgrounds*/
   useEffect(() => {
+    const pathname = window.location.pathname;
     console.log(pathname, "effect");
 
     if (pathname !== "/project/details") {
@@ -42,11 +41,9 @@ const App = () => {
       <NavigationBar />
       <MainAnimation />
       <h1>Hello</h1>
-      <About animate={animate} />
-      {pathname === "/portfolio/" && <About animate={animate}></About>}
       <Routes>
-        {/* <Route path="/" element={<About animate={animate} />}></Route> */}
-        <Route path="/about" element={<About animate={animate} />}></Route>
+        <Route path="/" element={<About animate={animate} />}></Route>
+        {/* <Route path="/about" element={<About animate={animate} />}></Route> */}
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contact" element={<HireMe />}></Route>
         <Route path="/project/details" element={<ProjectDetails />}></Route>
