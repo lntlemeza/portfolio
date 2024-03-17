@@ -10,11 +10,21 @@ import ProjectDetails from "./pages/ProjectDetails";
 import backdrop from "./assets/backdrop.jpeg";
 
 import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 const App = () => {
   //*will be use along with the use effect to ensure the animation runs once
   const [animate, setAnimate] = useState(true);
+
+  /*Handle image backgrounds*/
+  const location = useLocation();
+  useEffect(() => {
+    let pathname = location.pathname;
+
+    if (pathname !== "/project/details") {
+      document.body.style.backgroundImage = `url(${backdrop})`;
+    }
+  }, [location]);
 
   /*handle animations, for the about so that it only animates once*/
   useEffect(() => {
@@ -26,24 +36,12 @@ const App = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
-  /*Handle image backgrounds*/
-  useEffect(() => {
-    const pathname = window.location.pathname;
-    console.log(pathname, "effect");
-
-    if (pathname !== "/project/details") {
-      document.body.style.backgroundImage = `url(${backdrop})`;
-    }
-  }, []);
-
   return (
     <div>
       <NavigationBar />
       <MainAnimation />
-      <h1>Hello</h1>
       <Routes>
         <Route path="/" element={<About animate={animate} />}></Route>
-        {/* <Route path="/about" element={<About animate={animate} />}></Route> */}
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contact" element={<HireMe />}></Route>
         <Route path="/project/details" element={<ProjectDetails />}></Route>

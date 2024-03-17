@@ -8,7 +8,7 @@ export const Projects = () => {
       <section className="content pt-5 mt-5">
         <div className="row g-5 d-flex justify-content-center">
           <div className="col-6 card-holder m-4 p-4">
-            <div className="col">
+            <div className="col ">
               <h1>Kultiv8 Consulting</h1>
               <h2 className="pt-2">Blog Post Website</h2>
               <p className="pt-1 pb-2">
@@ -38,8 +38,8 @@ export const Projects = () => {
           </div>
 
           <div className="col-6 card-holder m-4 p-4">
-            <div className="col">
-              <h1>Upcoming Project</h1>
+            <div className="col card-body">
+              <h1 className="">Upcoming Project</h1>
               <h2 className="pt-2">React Movie Site Clone</h2>
               <p className="pt-1 pb-2">
                 So I saw movie website that looked cool and I thought I shoud

@@ -1,6 +1,5 @@
 
 
-
 .nav{
     min-width: 100%;
 }
@@ -11,19 +10,31 @@
     justify-content: center;
     padding: 40px;
     cursor: pointer;
-
 }
 
 .nav-items li{
     list-style: none;
-    
-}
+    }
 
-.nav-items a{
+.nav-item{
     margin-right: 40px;
     letter-spacing: 2px;
     text-decoration: none;
     color: white;
-
 }
+
+.active{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+    font-size: 20px;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+
+
 

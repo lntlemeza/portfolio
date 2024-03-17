@@ -1,14 +1,27 @@
 import "./NavigationBar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
+  // const pathname = window.location.pathname;
+
   return (
     <nav className="nav">
       <ul className="nav-items">
-        <Link to="/">About</Link>
-        <Link to="/projects">Projects</Link>
-
-        <Link to="/contact">Hire Me</Link>
+        <li>
+          <NavLink className="nav-item" to="/">
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="nav-item" to="/projects">
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="nav-item" to="/contact">
+            Hire Me
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
