@@ -122,3 +122,58 @@ p{
 
 
 /* Responsive */
+ /*Mobile Devices*/
+ @media screen and (max-width:576px) {
+    img{
+        width: 20px;
+    } 
+
+    .xamarin {
+        top: 60%;
+        left: 83%;
+        width: 25px;
+    }
+    
+    .sql{
+        top: 75%;
+        left: 49%;
+        width: 40px;
+    }
+
+    .react {
+        top: 60%;
+        left: 5%;
+        width: 30px;
+    }
+
+.html {
+    top: 10px;
+    left: 18%;
+}
+
+.css {
+    top: 10px;
+    left: 47%;
+}
+
+.js {
+    top: 16px;
+    left: 72%;
+}
+
+.csharp {
+    top: 60%;
+    left: 30%;
+}
+
+.dotnet {
+    top:60%;
+    left: 60%;
+}
+
+.boot{
+    top: 16px;
+    left: 94%;
+}
+ 
+ }

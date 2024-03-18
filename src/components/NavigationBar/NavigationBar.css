@@ -12,10 +12,15 @@
     cursor: pointer;
 }
 
-.nav-items li{
+li{
     list-style: none;
+    display: flex;
+    justify-content: center;
     }
 
+.nav-item a{
+    min-width: 100%;
+}
 .nav-item{
     margin-right: 40px;
     letter-spacing: 2px;

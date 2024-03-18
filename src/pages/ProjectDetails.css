@@ -1,3 +1,9 @@
 .project-details{
     max-width: 60vw;
 }
+
+@media screen and (max-width:578px) {
+    img{
+        max-width: 20em;
+    }
+}

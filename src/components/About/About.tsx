@@ -52,7 +52,7 @@ const About = ({ animate }: props) => {
 
           <p
             id="conclusion"
-            className={`${animate && "fade-in2"} pt-5 ps-5 fw-bold`}
+            className={`${animate && "fade-in2"} pt-5 mt-4 ps-md-5 fw-bold`}
           >
             I am passionate about coding and I'm ready to take on new challenges
             and create awesome stuff!

@@ -45,9 +45,10 @@ export const Projects = () => {
                 So I saw movie website that looked cool and I thought I shoud
                 clone it using React.
               </p>
+              <p className="pb-3">⚠️ This is a pirating site. It has popups.</p>
               <a
                 href="https://fmoviesz.to/home"
-                className="view-project text-light border-light p-2"
+                className="view-project text-light border-light p-2 mt-5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +67,7 @@ export const Projects = () => {
                     d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
                   />
                 </svg>
-                See the website.
+                See the website I want to clone.
               </a>
             </div>
           </div>

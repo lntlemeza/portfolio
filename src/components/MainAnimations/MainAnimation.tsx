@@ -6,7 +6,10 @@ import "./MainAnimation.css";
 const MainAnimation = () => {
   return (
     <>
-      <section style={{ height: "100vh" }} className="lead-animations">
+      <section
+        style={{ height: "100vh" }}
+        className="d-none d-md-block lead-animations"
+      >
         <img className="astro" src={astro} />
         <img className="rocket" src={rocket} />
         <img className="book" src={book} />

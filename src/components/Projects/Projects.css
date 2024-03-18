@@ -90,3 +90,10 @@
 }
 
 
+@media screen and (max-width:908px) {
+  .card-holder{
+    min-width: 20rem;
+    background-color: transparent;
+  }
+}
+
